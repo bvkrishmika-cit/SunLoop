@@ -11,12 +11,11 @@ During peak sunny hours, residential solar arrays often produce more electricity
 
 ---
 
-## 🌐 Instant Public URL (Access from Any Device)
+## 🌐 Live Production Application
 
-You can access the live website from any smartphone, laptop, or tablet in the world without using localhost:
+You can access the live web application from any browser on any device:
 
-👉 **[https://yucci-2405-201-e004-b0cd-b846-2ee9-3408-bfdc.free.pinggy.net](https://yucci-2405-201-e004-b0cd-b846-2ee9-3408-bfdc.free.pinggy.net)**  
-*(Alternative mirror: [https://swdso-2405-201-e004-b0cd-b846-2ee9-3408-bfdc.run.pinggy-free.link](https://swdso-2405-201-e004-b0cd-b846-2ee9-3408-bfdc.run.pinggy-free.link))*
+👉 **[https://sunloop-nexus.streamlit.app](https://sunloop-nexus.streamlit.app)**
 
 ---
 
@@ -41,7 +40,7 @@ You can access the live website from any smartphone, laptop, or tablet in the wo
   - Slider: Select energy units to book (`1 to 30 kWh`).
   - Real-time comparison showing total cost vs. standard grid reference rate.
   - **"Book Solar Slot"** button launches a 3D confirmation voucher modal with an SVG QR verification badge, transaction code, and celebratory balloons (`st.balloons()`).
-  - Automatically appends bookings into the persistent CSV flat file ([`data/bookings.csv`](file:///c:/Users/krishmika/Projects/SunLoop/data/bookings.csv)).
+  - Automatically appends bookings into the persistent CSV flat file ([`data/bookings.csv`](data/bookings.csv)).
 
 ### 3. 💰 Cost & Savings Calculator
 - **Two Sliders:**
@@ -60,17 +59,17 @@ You can access the live website from any smartphone, laptop, or tablet in the wo
 
 ---
 
-## 🛠️ Public Startup Scripts
+## 🛠️ Local Development & Setup
 
-### On Linux / Mac / WSL / Git Bash
+### 1. Clone & install dependencies
 ```bash
-chmod +x run_public.sh
-./run_public.sh
+git clone https://github.com/bvkrishmika-cit/SunLoop.git
+cd SunLoop
+pip install -r requirements.txt
 ```
 
-### On Windows
-Double-click [`run_public.bat`](file:///c:/Users/krishmika/Projects/SunLoop/run_public.bat) or run in PowerShell:
-```powershell
-.\run_public.ps1
+### 2. Run the application
+```bash
+streamlit run app.py
 ```
-This automatically ensures the server is running on port 8501 and establishes an instant public HTTPS tunnel.
+Open your browser and navigate to `http://localhost:8501`.
