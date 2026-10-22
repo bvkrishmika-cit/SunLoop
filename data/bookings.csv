@@ -1,0 +1,4 @@
+Booking_ID,Timestamp,Customer_Name,Station_Name,Units_kWh,Rate_Per_kWh,Total_Amount_INR,Status
+SL-101,2026-10-22 10:30,Local EV Driver,Central EV Station,12.5,5.2,65.0,Confirmed
+SL-102,2026-10-22 11:45,Delivery Van,City Hub FastCharge,18.0,4.8,86.4,Confirmed
+SL-621,2026-10-22 15:13,Local Consumer,Central EV Station,7.0,5.2,36.4,Confirmed

@@ -1,0 +1,6 @@
+ID,Name,Type,Latitude,Longitude,Demand_kW,Dynamic_Rate_INR,Status
+HUB-01,Central EV Station,EV Station,12.8750,80.2240,15.0,5.20,Available
+HUB-02,City Hub FastCharge,EV Station,12.8715,80.2190,10.0,4.80,Available
+HUB-03,Local Artisan Bakery,Small Business,12.8790,80.2260,6.5,5.50,Available
+HUB-04,Community Laundromat,Small Business,12.8680,80.2150,4.0,5.00,Available
+HUB-05,GreenRide 2-Wheeler Hub,EV Station,12.8820,80.2280,8.0,4.50,Available
